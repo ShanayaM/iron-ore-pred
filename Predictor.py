@@ -10,7 +10,7 @@ class Predictor:
         self.target = "% Silica Concentrate"
         self.mean = {}
         self.models = {}
-        self.model_names = ['lr', 'dummy', 'gb', 'lasso', 'ridge', 'xgbr', 'rf', 'cb']
+        self.model_names = ['xgbr', 'rf', 'cb']
 
     def preprocess(self):
         print("preprocessing")

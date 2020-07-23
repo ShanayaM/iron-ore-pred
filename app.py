@@ -1,10 +1,13 @@
 from flask import Flask, request, Response
 from flask import render_template
 from Predictor import *
+import os
+dirname = os.path.dirname(__file__)
+os.chdir(dirname)
 
 app = Flask(__name__)
 
-pred = Predictor("data/mining.csv")
+pred = Predictor('data/mining.csv')
 pred.preprocess()
 pred.load_models()
 
