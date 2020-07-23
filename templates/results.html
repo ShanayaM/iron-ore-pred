@@ -2,20 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Results</title>
+    <title>Results | Iron Ore Predictor </title>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"
+    ></script>
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+    ></script>
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+    />
 </head>
+<style>
+
+    body {
+        background-image: url('bg.jpg');
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-blend-mode: lighten;
+    }
+</style>
 <body>
 
 
-<div class="container py-5">
-    <h2> Linear Regression: {{lr}}</h2>
-    <h2> Dummy Regression: {{dummy}}</h2>
-    <h2> Gradient Boost: {{gb}}</h2>
-    <h2> Lasso Regression: {{lasso}}</h2>
-    <h2> Ridge Regression: {{ridge}}</h2>
-    <h2> XGBoost Regression: {{xgbr}}</h2>
-    <h2> Random Forest Regression: {{rf}}</h2>
-    <h2> CatBoost Regression: {{cb}}</h2>
+<div class="container my-5">
+    <div class="container py-5">
+        <h2 class="text-white">Results</h2>
+        <table class="table table-bordered" style="background-color: white">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">Model Name</th>
+                <th scope="col">Prediction</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Linear</th>
+                <td>{{ lr }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Dummy</th>
+                <td>{{ dummy }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Gradient Boost</th>
+                <td>{{ gb }}</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Lasso</th>
+                <td>{{ lasso }}</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Ridge</th>
+                <td>{{ ridge }}</td>
+            </tr>
+
+            <tr>
+                <th scope="row">XGBoost</th>
+                <td>{{ xgbr }}</td>
+            </tr>
+
+
+            <tr>
+                <th scope="row">Random Forest</th>
+                <td>{{ rf }}</td>
+            </tr>
+
+
+            <tr>
+                <th scope="row">CatBoost</th>
+                <td>{{ cb }}</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+            <button class="offset-11 col-1 btn btn-primary" href="/">
+                Back
+    </div>
 </div>
 
 </body>
