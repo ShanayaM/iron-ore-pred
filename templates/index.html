@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"
+    ></script>
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+    ></script>
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+    />
+
+</head>
+<body>
+
+
+<div class="container py-5">
+    <form action="/query" method="post">
+        <label> % Iron Feed</label>
+        <input class="form-control" type="text" name="% Iron Feed">
+
+        <label> % Silica Feed</label>
+        <input class="form-control" type="text" name="% Silica Feed">
+
+        <label> Starch Flow</label>
+        <input class="form-control" type="text" name="Starch Flow">
+
+        <label> Amina Flow</label>
+        <input class="form-control" type="text" name="Amina Flow">
+
+        <label>Ore Pulp Flow</label>
+        <input class="form-control" type="text" name="Ore Pulp Flow">
+
+        <label> Ore Pulp Density</label>
+        <input class="form-control" type="text" name="Ore Pulp Density">
+
+        <label> % Iron Concentrate</label>
+        <input class="form-control" type="text" name="% Iron Concentrate">
+        <input class="form-control" type="submit">
+    </form>
+</div>
+
+</body>
+</html>
