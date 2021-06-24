@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Iron Ore Predictor</title>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"
+    ></script>
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+    ></script>
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+    />
+
+</head>
+
+<style>
+    form {
+        background-color: white;
+    }
+
+    body {
+        background-image: url("static/bg.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.2);
+        background-blend-mode: lighten;
+    }
+</style>
+<body>
+
+
+<div class="container py-5">
+    <div class="container py-5">
+        <h3 class="text-white">Iron Ore % Prediction</h3>
+        <form class="p-4" action="/query" method="post">
+            <div class="form-row">
+                <div class="col">
+                    <label> % Iron Feed</label>
+                    <input class="mb-2 form-control" type="text" name="% Iron Feed" required>
+                </div>
+                <div class="col">
+                    <label> % Silica Feed</label>
+                    <input class="mb-2 form-control" type="text" name="% Silica Feed"required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col">
+                    <label> Starch Flow</label>
+                    <input class="mb-2 form-control" type="text" name="Starch Flow"required>
+                </div>
+                <div class="col">
+                    <label> Amina Flow</label>
+                    <input class="mb-2 form-control" type="text" name="Amina Flow"required>
+                </div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="col">
+                    <label>Ore Pulp Flow</label>
+                    <input class="mb-2 form-control" type="text" name="Ore Pulp Flow"required>
+                </div>
+                <div class="col">
+
+                    <label> Ore Pulp Density</label>
+                    <input class="mb-2 form-control" type="text" name="Ore Pulp Density"required>
+                </div>
+            </div>
+
+            <label> % Iron Concentrate</label>
+            <input class="mb-2 form-control" type="text" name="% Iron Concentrate"required>
+            <input class="offset-5 col-1 btn btn-primary" type="submit">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
